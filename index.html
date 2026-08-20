@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Notes — AI workflows for busy professionals</title>
+<meta name="description" content="Daily AI workflows and tool breakdowns for busy professionals. Save 5+ hours a week — no coding required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Favicon: the wordmark as inline SVG -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%234F8EF7'/%3E%3Ctext x='50' y='62' font-family='sans-serif' font-size='42' font-weight='bold' fill='white' text-anchor='middle'%3EAI%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0F1117; --card:#171B24; --line:#232937;
+    --fg:#FFFFFF; --muted:#969CAA; --accent:#4F8EF7; --accent-dk:#3B74D9;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--fg);
+    font-family:'Poppins',system-ui,sans-serif;
+    min-height:100dvh; display:flex; justify-content:center;
+    padding:48px 20px 40px;
+  }
+  main{width:100%;max-width:420px;text-align:center}
+
+  /* wordmark */
+  .mark{
+    width:96px;height:96px;border-radius:50%;
+    background:var(--accent); margin:0 auto 18px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1;
+  }
+  .mark .ai{font-weight:700;font-size:34px;color:#fff;letter-spacing:.5px}
+  .mark .notes{font-weight:700;font-size:14px;color:var(--bg);margin-top:2px}
+
+  h1{font-size:22px;font-weight:700}
+  .tag{color:var(--muted);font-size:14px;margin:8px 0 4px}
+  .promise{
+    display:inline-block;color:var(--accent);font-size:13px;font-weight:600;
+    border:1px solid var(--line);border-radius:999px;padding:5px 14px;margin:10px 0 28px;
+  }
+
+  .links{display:flex;flex-direction:column;gap:14px;text-align:left}
+  a.link{
+    display:block;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--fg);
+    transition:transform .12s ease,border-color .12s ease;
+  }
+  a.link:hover,a.link:focus-visible{transform:translateY(-2px);border-color:var(--accent)}
+  a.link:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .link .t{font-weight:600;font-size:15px}
+  .link .d{color:var(--muted);font-size:13px;margin-top:3px}
+
+  /* primary CTA gets the accent */
+  a.link.primary{background:var(--accent);border-color:var(--accent)}
+  a.link.primary .t{color:#fff}
+  a.link.primary .d{color:#E3EDFF}
+  a.link.primary:hover{background:var(--accent-dk)}
+
+  .soon{
+    font-size:11px;font-weight:600;color:var(--bg);background:#F2C14E;
+    border-radius:6px;padding:2px 8px;margin-left:8px;vertical-align:middle;
+  }
+
+  footer{margin-top:36px;color:var(--muted);font-size:12px}
+  footer a{color:var(--muted)}
+  @media (prefers-reduced-motion:reduce){a.link{transition:none}a.link:hover{transform:none}}
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">
+    <span class="ai">AI</span><span class="notes">notes</span>
+  </div>
+
+  <h1>AI Notes</h1>
+  <p class="tag">AI workflows for busy professionals</p>
+  <p class="promise">Save 5+ hrs/week — no coding required</p>
+
+  <nav class="links" aria-label="Links">
+
+    <!-- EDIT ME: when the Gumroad free pack is live, replace href and remove the "coming soon" span -->
+    <a class="link primary" href="#" onclick="return false;" aria-disabled="true">
+      <span class="t">Free prompt pack <span class="soon">coming soon</span></span>
+      <span class="d">25 copy-paste prompts for email, meetings & planning</span>
+    </a>
+
+    <!-- EDIT ME: replace with your Beehiiv URL when the newsletter shell is live -->
+    <a class="link" href="#" onclick="return false;" aria-disabled="true">
+      <span class="t">Weekly newsletter <span class="soon">coming soon</span></span>
+      <span class="d">One email a week — the best AI workflows we find</span>
+    </a>
+
+    <a class="link" href="https://www.instagram.com/ainotes.daily/">
+      <span class="t">Instagram — @ainotes.daily</span>
+      <span class="d">New tool breakdowns daily</span>
+    </a>
+
+    <a class="link" href="https://www.facebook.com/profile.php?id=61591091356463">
+      <span class="t">AI Notes on Facebook</span>
+      <span class="d">AI news, twice daily</span>
+    </a>
+
+  </nav>
+
+  <footer>
+    © 2026 AI Notes
+  </footer>
+</main>
+</body>
+</html>
